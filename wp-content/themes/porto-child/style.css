@@ -17,3 +17,18 @@ Text Domain: porto-child
 
 /*************** ADD YOUR CUSTOM CSS HERE  ***************/
 
+#header.header-separate .header-main .logo img{max-height:85px;}
+.sidebar.left-sidebar{width:245px;position:absolute;top:98px;}
+.top-banner{
+	    width: -webkit-calc(100% - 224px);
+    width: -moz-calc(100% - 224px);
+    width: calc(100% - 224px);
+	float:right;	
+	
+}
+@media  (max-width: 991px){
+	.top-banner{
+		width:100%;
+	}
+	
+}

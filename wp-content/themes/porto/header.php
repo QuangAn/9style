@@ -123,7 +123,7 @@ if ('no' !== $loading_overlay && ('yes' === $loading_overlay || ('yes' !== $load
             <?php endif; ?>
 
             <!-- main content -->
-            <div class="main-content <?php if ($porto_layout == 'wide-left-sidebar' || $porto_layout == 'wide-right-sidebar' || $porto_layout == 'left-sidebar' || $porto_layout == 'right-sidebar') echo 'col-md-9'; else echo 'col-md-12'; ?>">
+            <div class="main-content <?php if ($porto_layout == 'wide-left-sidebar' || $porto_layout == 'wide-right-sidebar' || $porto_layout == 'left-sidebar' || $porto_layout == 'right-sidebar') echo 'col-md-12'; else echo 'col-md-12'; ?>">
 
             <?php wp_reset_postdata(); ?>
                 <?php
