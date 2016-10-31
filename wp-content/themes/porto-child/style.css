@@ -215,7 +215,10 @@ Text Domain: porto-child
 		font-size: 20px;
 	}
 }
-
+#main-menu .mega-menu > li.menu-item:hover > a{
+	background-color: transparent;
+	text-decoration: underline;
+}
 @media  (max-width: 1190px){
 	.minicart-label{display: none;}
 }
