@@ -40,6 +40,7 @@ function porto_logo( $sticky_logo = false) {
             }
         } else {
             bloginfo( 'name' );
+			
         } ?>
     </a>
     <?php if ( (( is_front_page() && is_home()) || is_front_page()) && !$sticky_logo ) : ?></h1><?php else : ?></div><?php
@@ -1619,7 +1620,7 @@ function porto_search_form_content() {
     <form action="<?php echo home_url(); ?>/" method="get"
         class="searchform <?php if (isset($porto_settings['search-type']) && ($porto_settings['search-type'] === 'post' || $porto_settings['search-type'] === 'product' || $porto_settings['search-type'] === 'portfolio') && (isset($porto_settings['search-cats']) && $porto_settings['search-cats'])) echo 'searchform-cats'; ?>">
         <fieldset>
-            <span class="text"><input name="s" id="s" type="text" value="<?php echo get_search_query() ?>" placeholder="<?php echo __('Search&hellip;', 'porto'); ?>" autocomplete="off" /></span>
+            <span class="text"><input name="s" id="s" type="text" value="<?php echo get_search_query() ?>" placeholder="<?php echo __('Tìm kiếm&hellip;', 'porto'); ?>" autocomplete="off" /></span>
             <?php if (isset($porto_settings['search-type']) && ($porto_settings['search-type'] === 'post' || $porto_settings['search-type'] === 'product' || $porto_settings['search-type'] === 'portfolio')) : ?>
                 <input type="hidden" name="post_type" value="<?php echo $porto_settings['search-type'] ?>"/>
                 <?php
@@ -1771,6 +1772,7 @@ function porto_minicart() {
                             ? '<span class="mobile-hide">' . sprintf( _n( '%d item', '%d items', $_cartQty, 'porto' ), $_cartQty ) . '</span><span class="mobile-show">' . $_cartQty . '</span>'
                             : (($_cartQty > 0) ? $_cartQty : '0'); ?></span>
                 <?php endif; ?>
+				<label class="minicart-label">Giỏ hàng</label>
             </div>
             <div class="dropdown-menu cart-popup widget_shopping_cart">
                 <div class="widget_shopping_cart_content">
