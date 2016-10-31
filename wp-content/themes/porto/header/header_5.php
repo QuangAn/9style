@@ -18,34 +18,7 @@ $minicart_type = $porto_settings['minicart-type'];
                     echo '<span class="welcome-msg">' . do_shortcode($porto_settings['welcome-msg']) . '</span>';
                 ?>
             </div>
-            <div class="header-right">
-                <?php
-                // show currency and view switcher
-                /*$currency_switcher = porto_currency_switcher();
-                $view_switcher = porto_view_switcher();
-
-                if ($currency_switcher || $view_switcher)
-                    echo '<div class="switcher-wrap">';
-
-                echo $currency_switcher;
-
-                if ($currency_switcher && $view_switcher)
-                    echo '<span class="gap switcher-gap">|</span>';
-
-                echo $view_switcher;
-
-                if ($currency_switcher || $view_switcher)
-                    echo '</div>';*/
-                ?>
-				<?php  $minicart = porto_minicart(); ?>
-                <div class="<?php if ($minicart) echo 'header-minicart'.str_replace('minicart', '', $minicart_type) ?>">
-                   
-                    <?php
-                    // show mini cart
-                    echo $minicart;
-                    ?>
-                </div>
-            </div>
+           
         </div>
     </div>
     <?php endif; ?>
@@ -68,7 +41,7 @@ $minicart_type = $porto_settings['minicart-type'];
 
                 // show mobile toggle
                 ?>
-                <a class="mobile-toggle"><i class="fa fa-reorder"></i></a>
+                <a class="mobile-toggle"><label>Menu</label><i class="fa fa-reorder"></i></a>
             </div>
             <div class="header-right">
 
@@ -110,7 +83,34 @@ $minicart_type = $porto_settings['minicart-type'];
                    
                     
                 </div>
+                 <div class="header-cart">
+                <?php
+                // show currency and view switcher
+                /*$currency_switcher = porto_currency_switcher();
+                $view_switcher = porto_view_switcher();
 
+                if ($currency_switcher || $view_switcher)
+                    echo '<div class="switcher-wrap">';
+
+                echo $currency_switcher;
+
+                if ($currency_switcher && $view_switcher)
+                    echo '<span class="gap switcher-gap">|</span>';
+
+                echo $view_switcher;
+
+                if ($currency_switcher || $view_switcher)
+                    echo '</div>';*/
+                ?>
+                <?php  $minicart = porto_minicart(); ?>
+                <div class="<?php if ($minicart) echo 'header-minicart'.str_replace('minicart', '', $minicart_type) ?>">
+                   
+                    <?php
+                    // show mini cart
+                    echo $minicart;
+                    ?>
+                </div>
+            </div>
                 <?php
                 get_template_part('header/header_tooltip');
                 ?>
