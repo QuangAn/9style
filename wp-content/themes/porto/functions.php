@@ -536,3 +536,32 @@ function porto_enqueue_custom_css() {
         echo $logo_width_mobile ?>px; } } <?php if ($porto_settings['change-header-logo']) : ?>#header.sticky-header .logo { max-width: <?php
         echo $logo_width_sticky * 1.25 ?>px; }<?php endif; ?></style><?php
 }
+// Block single product On product detail
+register_sidebar( array(
+'name' => 'Block single product',
+'id' => 'block-single-product',
+'description' => 'Block single product',
+'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+'after_widget' => '</aside>',
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+// Block single product On product detail
+
+// Remove shop on breacrumb
+function wsis_wpseo_breadcrumb_output( $output ){
+
+
+        $from = '<a href="'.site_url().'/sitemap/" rel="v:url" property="v:title">Sản phẩm</a> » ';   
+		
+        $to     = '';
+
+        $output = str_replace( $from, $to, $output );
+
+   
+
+    return $output;
+}
+
+add_filter( 'wpseo_breadcrumb_output', 'wsis_wpseo_breadcrumb_output' );
+// Remove shop on breacrumb

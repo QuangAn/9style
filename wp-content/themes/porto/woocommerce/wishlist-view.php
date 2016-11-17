@@ -55,13 +55,13 @@
                 <th class="product-thumbnail"></th>
 
                 <th class="product-name">
-                    <span class="nobr"><?php echo apply_filters( 'yith_wcwl_wishlist_view_name_heading', __( 'Product Name', 'yith-woocommerce-wishlist' ) ) ?></span>
+                    <span class="nobr"><?php echo apply_filters( 'yith_wcwl_wishlist_view_name_heading', __( 'Tên sản phẩm', 'yith-woocommerce-wishlist' ) ) ?></span>
                 </th>
 
                 <?php if( $show_price ) : ?>
                     <th class="product-price">
                         <span class="nobr">
-                            <?php echo apply_filters( 'yith_wcwl_wishlist_view_price_heading', __( 'Unit Price', 'yith-woocommerce-wishlist' ) ) ?>
+                            <?php echo apply_filters( 'yith_wcwl_wishlist_view_price_heading', __( 'Giá', 'yith-woocommerce-wishlist' ) ) ?>
                         </span>
                     </th>
                 <?php endif ?>
@@ -69,7 +69,7 @@
                 <?php if( $show_stock_status ) : ?>
                     <th class="product-stock-stauts">
                         <span class="nobr">
-                            <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', __( 'Stock Status', 'yith-woocommerce-wishlist' ) ) ?>
+                            <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', __( 'Tình trạng', 'yith-woocommerce-wishlist' ) ) ?>
                         </span>
                     </th>
                 <?php endif ?>
@@ -146,10 +146,10 @@
                                     <?php
                                     if( $stock_status == 'out-of-stock' ) {
                                         $stock_status = "Out";
-                                        echo '<span class="wishlist-out-of-stock">' . __( 'Out of Stock', 'yith-woocommerce-wishlist' ) . '</span>';
+                                        echo '<span class="wishlist-out-of-stock">' . __( 'Tạm hết hàng', 'yith-woocommerce-wishlist' ) . '</span>';
                                     } else {
                                         $stock_status = "In";
-                                        echo '<span class="wishlist-in-stock">' . __( 'In Stock', 'yith-woocommerce-wishlist' ) . '</span>';
+                                        echo '<span class="wishlist-in-stock">' . __( 'Còn trong kho', 'yith-woocommerce-wishlist' ) . '</span>';
                                     }
                                     ?>
                                 </td>

@@ -32,7 +32,7 @@ if ($porto_layout === 'widewidth' || $porto_layout === 'wide-left-sidebar' || $p
 ?>
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" class="<?php echo $post_class ?>">
-
+    
     <div class="product-summary-wrap">
         <div class="row">
             <div class="col-md-5 summary-before">
@@ -62,6 +62,11 @@ if ($porto_layout === 'widewidth' || $porto_layout === 'wide-left-sidebar' || $p
                      */
                     do_action( 'woocommerce_single_product_summary' );
                 ?>
+				<?php
+				if(is_active_sidebar('block-single-product')){
+				dynamic_sidebar('block-single-product');
+				}
+				?>
             </div>
         </div>
     </div><!-- .summary -->

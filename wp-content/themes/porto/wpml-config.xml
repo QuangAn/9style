@@ -29,6 +29,7 @@
             <key name="faq-cat-slug-name" />
             <key name="faq-title" />
             <key name="product-tab-title" />
+			<key name="product-tab-title-2" />
             <key name="product-quickview-label" />
             <key name="product-hot-label" />
             <key name="product-sale-label" />

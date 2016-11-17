@@ -17,7 +17,7 @@ Text Domain: porto-child
 /*************** ADD YOUR CUSTOM CSS HERE  ***************/
 
 #header.header-separate .header-main .logo img{max-height:85px;}
-.home .sidebar.left-sidebar{width:245px;position:absolute;top:98px;}
+.home .sidebar.left-sidebar{width:245px;position:absolute;top:118px;}
 .home .main-content{width:100%;}
 .top-banner{
 	    width: -webkit-calc(100% - 224px);
@@ -60,12 +60,14 @@ Text Domain: porto-child
 }
 .header-bottom{background-color:#e60f1e;}
 .header-bottom .container{min-height:auto !important;}
+#header.sticky-header .header-main.change-logo .container > div{padding: 0;}
 #main-menu .mega-menu > li.menu-item > a{
 	position:relative;
 	color:#fff;
+	border: none;
 }
-#main-menu .mega-menu > li.menu-item:first-child > a{padding-left:0;}
-#main-menu .mega-menu > li.menu-item > a:after{
+#main-menu .mega-menu > li.menu-item:first-child > a{padding-left:0;font-size: 20px;}
+#main-menu .mega-menu > li.menu-item > a:before{
 	content: '';
     width: 1px;
     height: 17px;
@@ -74,11 +76,13 @@ Text Domain: porto-child
     color: #fff;
     background: #fff;
 }
-#main-menu .mega-menu > li.menu-item > a:hover,
-#main-menu .mega-menu > li.menu-item.active > a{
+#main-menu .mega-menu > li.menu-item.active > a, #main-menu .mega-menu > li.menu-item:hover > a, #main-menu .mega-menu > li.menu-item.active > h5, #main-menu .mega-menu > li.menu-item:hover > h5{
 	background-color:transparent;
 	color:#fff;
 	text-decoration:underline;
+}
+#main-menu .mega-menu > li.menu-item > a, #main-menu .mega-menu > li.menu-item > h5{
+	color: #fff;
 }
 #header .top-links > li.menu-item:hover a{color:#fff !important;text-decoration:underline;}
 #main-menu .mega-menu > li.menu-item:last-child > a:after{
@@ -114,8 +118,8 @@ Text Domain: porto-child
 	padding:0 1px;
 }
 .item-image{position:relative;}
-.item-image h2 a{
-	color: #fff;
+.item-image h2{
+	margin: 0;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -123,10 +127,14 @@ Text Domain: porto-child
 	text-align:center;
 	text-decoration:none;
 }
+.item-image h2 a{
+	position: relative;
+	color: #fff;
+}
 .item-image h2:before{
-	    content: '';
+	 content: '';
     width: 100%;
-    height: 40px;	
+    height: 100%;	
     position: absolute;
     background-color: rgba(1,1,1,0.6);
     bottom: 0;
@@ -139,7 +147,7 @@ Text Domain: porto-child
 }
 .item-image:hover h2 a{color:#e60f1e;}
 .cate-static-image{clear:both;}
-.home .cate-static-image .vc_text_separator {margin-top:25px;margin-bottom:0;}
+.home .cate-static-image .vc_text_separator {margin-top:50px;margin-bottom:30px;}
 .home .cate-static-image .vc_text_separator h4{font-size:30px;color:#e60f1e;}
 #main-menu{float:left;}
 .header-minicart-box{
@@ -168,10 +176,15 @@ Text Domain: porto-child
 	font-size: 11px;
 	cursor: pointer;
 }
+.page-top.page-header-1 .page-title{
+	border-color:#000; 
+}
 @media  (max-width: 991px) and (min-width: 480px){
 	#mini-cart{
-		top: -75px;
-		right: -48px;
+		position: initial;
+		float: right;
+		margin-right: 0;
+		margin-top: -80px;
 	}
 	#mini-cart .cart-items{
 		color: #e60f1e;
@@ -195,7 +208,7 @@ Text Domain: porto-child
 	}
 
 
-	#header .header-main .container .header-center{float: right;}
+	#header .header-main .container .header-center{float: right;margin-right: 10px;    }
 	#header .header-top{
 		display: block;
 	}
@@ -219,6 +232,104 @@ Text Domain: porto-child
 	background-color: transparent;
 	text-decoration: underline;
 }
+.widget_sidebar_menu .widget-title{
+	color: #fff;
+	background-color: #e60f1e;
+}
+#header.sticky-header .header-main.sticky >.container{display: none;}
+.master-slider .ms-container .ms-nav-prev, .master-slider .ms-container .ms-nav-next, .master-slider .ms-container .ms-slide-vpbtn, .master-slider .ms-container .ms-video-btn{
+	color: #fff;
+	border: none;
+}
+.trending .wpb_content_element{
+margin-bottom: 5px;
+}
+.top-banner .vc_separator h4{color: red;}
+.trending .vc_column_container {
+	padding: 0 2.5px;
+}
+
+#header .currency-switcher .narrow .popup > .inner > ul.sub-menu, #header .view-switcher .narrow .popup > .inner > ul.sub-menu, #header .top-links .narrow .popup > .inner > ul.sub-menu{
+	background-color: #ffffff;
+    border-top-color: #d10000;
+    border-top-width: 5px;
+}
+#header .top-links .narrow .popup li.menu-item:hover > a, #header .top-links .narrow .popup li.menu-item:hover > h5{
+	background-color: #f4f4f4;
+}
+#header .top-links .narrow .popup li.menu-item > a, #header .top-links .narrow .popup li.menu-item > h5{
+	    color: #777777 !important;
+    border-bottom-color: #f2f2f2;
+    text-decoration: none;
+}
+.woocommerce-MyAccount-navigation-link--downloads{
+	display: none !important;
+}
+.single.single-product .page-title {
+  display: none;
+}
+.product-summary-wrap .description{
+	font-size: 14px;
+}
+.product_title {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    font-family: Roboto, sans-serif;
+}
+.product-summary-wrap .price span{font-size: 20px;}
+.product-summary-wrap .price ins span{
+    font-size: 23px !important;
+    font-weight: bold;
+}
+.single.single-product .wpb_wrapper .aio-icon-header h3.aio-icon-title{
+	font-size: 13px !important;
+}
+.single.single-product .wpb_wrapper  .aio-icon-description{font-size: 13px !important;}
+.product-summary-wrap .cart{
+	padding: 10px 0;
+}
+.product-summary-wrap .single_add_to_cart_button{
+	padding: 0 50px;
+}
+.product-summary-wrap .cart {
+    padding: 10px;
+    background: #ededed;
+}
+.product-summary-wrap .price {
+    background: #ededed;
+    padding: 0 0 10px 10px;
+}
+.product-summary-wrap .single_add_to_cart_button {
+    padding: 4px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: auto;
+}
+
+.hoi-dap{
+	text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 0;
+    height: 37px;
+    width: 37px;
+  
+    line-height: 31px;
+}
+.yith-wcwl-add-to-wishlist a:focus{background: none !important;}
+.rating-product{
+	    position: absolute;
+    z-index: 99999;
+    bottom: 10px;
+    left: 10px;
+}
+#header .searchform fieldset{margin-bottom: 0;}
 @media  (max-width: 1190px){
 	.minicart-label{display: none;}
 }
@@ -230,6 +341,7 @@ Text Domain: porto-child
 	#header .header-top .welcome-msg{
 		font-size: 16px;
 	}
+	.single.single-product #block-widget-4{padding: 0 10px;}
 }
 @media  (max-width: 478px){
 	

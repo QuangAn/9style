@@ -30,14 +30,14 @@ if ( ! empty( $tabs ) || !empty($custom_tabs_title) || $global_tab_title ) : ?>
             <?php
             $i = 0;
             foreach ( $tabs as $key => $tab ) :
-                ?><li aria-controls="tab-<?php echo esc_attr( $key ) ?>">
+                ?><li id="tab-<?php echo esc_attr( $key ) ?>" aria-controls="tab-<?php echo esc_attr( $key ) ?>">
                     <?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?>
                 </li><?php
                 if ($key == 'reviews') $review_index = $i;
                 $i++;
             endforeach;
             ?>
-
+            
         </ul>
         <div class="resp-tabs-container">
             <?php foreach ( $tabs as $key => $tab ) : ?>

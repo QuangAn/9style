@@ -152,5 +152,6 @@ if (isset($porto_settings['js-code']) && $porto_settings['js-code']) { ?>
     </script>
 <?php } ?>
 
+
 </body>
 </html>

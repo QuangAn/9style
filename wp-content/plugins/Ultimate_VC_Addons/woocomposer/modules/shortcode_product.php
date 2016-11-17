@@ -68,7 +68,7 @@ if(!class_exists('WooComposer_ViewProduct')){
 													"off" => __("No","ultimate_vc"),
 												),
 										"quick" => array(
-													"label" => __("Quick View","ultimate_vc"),
+													"label" => __("Xem nhanh","ultimate_vc"),
 													"on" => __("Yes","ultimate_vc"),
 													"off" => __("No","ultimate_vc"),
 												),

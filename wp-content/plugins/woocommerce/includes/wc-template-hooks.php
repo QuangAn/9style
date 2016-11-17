@@ -117,7 +117,8 @@ add_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thu
  */
 add_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
 add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_thumbnails', 20 );
-
+add_action( 'woocommerce_product_thumbnails', 'woocommerce_template_single_sharing', 20 );
+add_action( 'woocommerce_product_thumbnails', 'woocommerce_template_single_meta', 25 );
 /**
  * After Single Products Summary Div.
  *
@@ -143,8 +144,8 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_t
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+
+
 
 /**
  * Reviews
@@ -154,10 +155,7 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_s
  * @see woocommerce_review_display_meta()
  * @see woocommerce_review_display_comment_text()
  */
-add_action( 'woocommerce_review_before', 'woocommerce_review_display_gravatar', 10 );
-add_action( 'woocommerce_review_before_comment_meta', 'woocommerce_review_display_rating', 10 );
-add_action( 'woocommerce_review_meta', 'woocommerce_review_display_meta', 10 );
-add_action( 'woocommerce_review_comment_text', 'woocommerce_review_display_comment_text', 10 );
+
 
 /**
  * Product Add to cart.

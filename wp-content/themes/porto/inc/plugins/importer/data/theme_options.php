@@ -750,6 +750,8 @@
     "product-tabs-pos":"",
     "product-tab-title":"",
     "product-tab-block":"",
+	"product-tab-title-2":"",
+    "product-tab-block-2":"",
     "product-related":"1",
     "product-related-count":"10",
     "product-related-cols":"4",

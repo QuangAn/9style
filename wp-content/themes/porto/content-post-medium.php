@@ -54,7 +54,7 @@ $post_layout = 'medium';
             if ($tags_list && in_array('tags', $porto_settings['post-metas'])) : ?>
                 <span><i class="fa fa-tag"></i> <?php echo $tags_list ?></span>
             <?php endif; ?>
-            <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 Comments', 'porto'), __('1 Comment', 'porto'), '% '.__('Comments', 'porto')); ?></span><?php endif; ?>
+            <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 bình luận', 'porto'), __('1 bình luận', 'porto'), '% '.__('Bình luận', 'porto')); ?></span><?php endif; ?>
             <?php
             if (function_exists('Post_Views_Counter') && Post_Views_Counter()->options['display']['position'] == 'manual') {
                 $post_count = do_shortcode('[post-views]');
@@ -69,14 +69,14 @@ $post_layout = 'medium';
         $share = porto_get_meta_value('post_share');
         if ($porto_settings['share-enable'] && 'no' !== $share && ('yes' === $share || ('yes' !== $share && $porto_settings['post-share']))) : ?>
             <div class="post-block post-share">
-                <h3><i class="fa fa-share"></i><?php _e('Share this post', 'porto') ?></h3>
+                <h3><i class="fa fa-share"></i><?php _e('Chia sẻ vài viết', 'porto') ?></h3>
                 <?php get_template_part('share') ?>
             </div>
         <?php endif; ?>
 
         <?php if ($porto_settings['post-author']) : ?>
             <div class="post-block post-author clearfix">
-                <h3><i class="fa fa-user"></i><?php _e('Author', 'porto') ?></h3>
+                <h3><i class="fa fa-user"></i><?php _e('Người đăng', 'porto') ?></h3>
                 <div class="img-thumbnail">
                     <?php echo get_avatar(get_the_author_meta('email'), '80'); ?>
                 </div>

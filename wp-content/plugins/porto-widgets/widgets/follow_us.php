@@ -51,6 +51,7 @@ class Porto_Follow_Us_Widget extends WP_Widget {
         }
         ?>
         <div class="share-links">
+			Chia sẻ lên : 
             <?php if ($follow_before) : ?><?php echo wpautop(do_shortcode($follow_before)) ?><?php endif; ?>
             <?php
             if ($facebook) :

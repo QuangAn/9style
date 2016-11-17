@@ -31,7 +31,7 @@ $get_checkout_url = version_compare($porto_woo_version, '2.5', '<') ? apply_filt
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 		<div class="row" id="customer_details">
-			<div class="col-md-6">
+			<div class="col-md-12">
                 <div class="featured-box align-left">
                     <div class="box-content">
 				        <?php do_action( 'woocommerce_checkout_billing' ); ?>
@@ -39,7 +39,7 @@ $get_checkout_url = version_compare($porto_woo_version, '2.5', '<') ? apply_filt
                 </div>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-12">
                 <div class="featured-box align-left">
                     <div class="box-content">
 				        <?php do_action( 'woocommerce_checkout_shipping' ); ?>

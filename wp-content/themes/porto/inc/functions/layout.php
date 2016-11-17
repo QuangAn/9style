@@ -499,7 +499,7 @@ function porto_top_navigation() {
             } else {
                 $logout_link = wp_logout_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
         } else {
             $login_link = $register_link = '';
             if ( class_exists( 'WooCommerce' ) ) {
@@ -514,7 +514,7 @@ function porto_top_navigation() {
                 if ($active_signup != 'none')
                     $register_link = wp_registration_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
             if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                 $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
             }
@@ -693,7 +693,7 @@ function porto_mobile_top_navigation() {
             } else {
                 $logout_link = wp_logout_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
         } else {
             $login_link = $register_link = '';
             if ( class_exists( 'WooCommerce' ) ) {
@@ -708,7 +708,7 @@ function porto_mobile_top_navigation() {
                 if ($active_signup != 'none')
                     $register_link = wp_registration_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
             if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                 $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
             }
@@ -773,9 +773,9 @@ function porto_main_menu() {
             }
 
             if (($header_type == 1 || $header_type == 4 || $header_type == 13 || $header_type == 14)) {
-                $html .= '<li class="'. ($porto_settings['menu-align'] == 'centered' ? 'inline-menu-item' : (is_rtl() ? 'pull-left' : 'pull-right')).'"><div class="menu-custom-block"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></div></li>';
+                $html .= '<li class="'. ($porto_settings['menu-align'] == 'centered' ? 'inline-menu-item' : (is_rtl() ? 'pull-left' : 'pull-right')).'"><div class="menu-custom-block"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></div></li>';
             } else {
-                $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+                $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
             }
         } else {
             $login_link = $register_link = '';
@@ -795,9 +795,9 @@ function porto_main_menu() {
                 if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                     $html .= '<li class="'. ($porto_settings['menu-align'] == 'centered' ? 'inline-menu-item' : (is_rtl() ? 'pull-left' : 'pull-right')).'"><div class="menu-custom-block"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></div></li>';
                 }
-                $html .= '<li class="'. ($porto_settings['menu-align'] == 'centered' ? 'inline-menu-item' : (is_rtl() ? 'pull-left' : 'pull-right')).'"><div class="menu-custom-block"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></div></li>';
+                $html .= '<li class="'. ($porto_settings['menu-align'] == 'centered' ? 'inline-menu-item' : (is_rtl() ? 'pull-left' : 'pull-right')).'"><div class="menu-custom-block"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></div></li>';
             } else {
-                $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+                $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
                 if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                     $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
                 }
@@ -1026,7 +1026,7 @@ function porto_header_side_menu() {
             } else {
                 $logout_link = wp_logout_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
         } else {
             $login_link = $register_link = '';
             if ( class_exists( 'WooCommerce' ) ) {
@@ -1041,7 +1041,7 @@ function porto_header_side_menu() {
                 if ($active_signup != 'none')
                     $register_link = wp_registration_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
             if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                 $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
             }
@@ -1285,7 +1285,7 @@ function porto_sidebar_menu() {
                 } else {
                     $logout_link = wp_logout_url( get_home_url() );
                 }
-                $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+                $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
             } else {
                 $login_link = $register_link = '';
                 if ( class_exists( 'WooCommerce' ) ) {
@@ -1300,7 +1300,7 @@ function porto_sidebar_menu() {
                     if ($active_signup != 'none')
                         $register_link = wp_registration_url( get_home_url() );
                 }
-                $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+                $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
                 if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                     $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
                 }
@@ -1512,7 +1512,7 @@ function porto_mobile_menu() {
             } else {
                 $logout_link = wp_logout_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Logout', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $logout_link . '"><i class="avatar">' . get_avatar( get_current_user_id(), $size = '24' ) . '</i>' . __('Thoát', 'porto') . '</a></li>';
         } else {
             $login_link = $register_link = '';
             if ( class_exists( 'WooCommerce' ) ) {
@@ -1527,7 +1527,7 @@ function porto_mobile_menu() {
                 if ($active_signup != 'none')
                     $register_link = wp_registration_url( get_home_url() );
             }
-            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Login', 'porto') . '</a></li>';
+            $html .= '<li class="menu-item"><a href="' . $login_link . '"><i class="fa fa-user"></i>' . __('Đ.nhập/Đ.ký', 'porto') . '</a></li>';
             if ($register_link && isset($porto_settings['menu-enable-register']) && $porto_settings['menu-enable-register']) {
                 $html .= '<li class="menu-item"><a href="' . $register_link . '"><i class="fa fa-user-plus"></i>' . __('Register', 'porto') . '</a></li>';
             }

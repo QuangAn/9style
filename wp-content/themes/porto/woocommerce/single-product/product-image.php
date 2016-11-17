@@ -69,6 +69,7 @@ if ( !count($attachment_ids) ) {
     echo apply_filters( 'woocommerce_single_product_image_html', $html, $post->ID );
 
     ?>
+	<div class="rating-product"><?php echo do_shortcode( '[yasr_overall_rating size="medium"]')  ?></div>
 </div>
 
 <?php

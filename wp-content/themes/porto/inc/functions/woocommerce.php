@@ -755,10 +755,23 @@ function porto_woocommerce_global_tab($tabs) {
             'title' 	=> force_balance_tags($custom_tab_title),
             'priority' 	=> $custom_tab_priority,
             'callback' 	=> 'porto_woocommerce_custom_tab_content',
-            'content' => do_shortcode(wpautop($custom_tab_content))
+            'content' => do_shortcode($custom_tab_content)
         );
     }
-
+	
+	
+	$custom_tab_title_2 = $porto_settings['product-tab-title-2'];
+    $custom_tab_content_2 = '[porto_block name="'.$porto_settings['product-tab-block-2'].'"]';
+    
+    if ($custom_tab_title_2 && $custom_tab_content_2) {
+        $tabs['global_tab_2'] = array(
+            'title' 	=> force_balance_tags($custom_tab_title_2),
+			'priority' 	=> '1000',
+            'callback' 	=> 'porto_woocommerce_custom_tab_content',
+            'content' => do_shortcode(wpautop($custom_tab_content_2))
+        );
+    }
+	
     return $tabs;
 }
 

@@ -83,7 +83,7 @@ function porto_breadcrumbs() {
                 }
                 $output .= sprintf( __( 'Tag - %s', 'porto' ), $html );
             } elseif ( is_tax('product_tag') ) {
-                $output .= sprintf( __( 'Product Tag - %s', 'porto' ), $html );
+                $output .= sprintf( __( '%s', 'porto' ), $html );
             } else {
                 if ( is_category() && get_option( 'show_on_front' ) == 'page' && (isset($porto_settings['breadcrumbs-blog-link']) && $porto_settings['breadcrumbs-blog-link']) ) {
                     $output .= porto_breadcrumbs_link( get_the_title( get_option('page_for_posts', true) ), get_permalink( get_option('page_for_posts' ) ) );

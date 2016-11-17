@@ -3150,10 +3150,10 @@ if (!class_exists('Redux_Framework_porto_settings')) {
                         'multi' => true,
                         'options'=> array(
                             'date' => __('Date', 'porto'),
-                            'author' => __('Author', 'porto'),
+                            'author' => __('Người đăng', 'porto'),
                             'cats' => __('Categories', 'porto'),
                             'tags' => __('Tags', 'porto'),
-                            'comments' => __('Comments', 'porto'),
+                            'comments' => __('Bình luận', 'porto'),
                             '-' => 'None',
                         ),
                         'default' => array('date', 'author','cats','tags','comments', '-')
@@ -3388,7 +3388,7 @@ if (!class_exists('Redux_Framework_porto_settings')) {
                     array(
                         'id'=>'post-related',
                         'type' => 'switch',
-                        'title' => __('Show Related Posts', 'porto'),
+                        'title' => __('Hiển thị bài liên quan', 'porto'),
                         'default' => true,
                         'on' => __('Yes', 'porto'),
                         'off' => __('No', 'porto'),
@@ -4265,7 +4265,7 @@ if (!class_exists('Redux_Framework_porto_settings')) {
                         'id'=>'category-addlinks-pos',
                         'type' => 'image_select',
                         'title' => __('Add Links Position', 'porto'),
-                        'desc' => __('Select position of add to cart, add to wishlist, quickview.', 'porto'),
+                        'desc' => __('Select position of add to cart, thêm vào yêu thích, quickview.', 'porto'),
                         'options' => array(
                             "outimage" => array('alt' => __('Out of Image', 'porto'), 'img' => porto_options_uri.'/images/product_addlinks_style_1.jpg'),
                             "onimage" => array('alt' => __('On Image', 'porto'), 'img' => porto_options_uri.'/images/product_addlinks_style_2.jpg'),
@@ -4286,7 +4286,7 @@ if (!class_exists('Redux_Framework_porto_settings')) {
                     array(
                         'id'=>'product-wishlist',
                         'type' => 'switch',
-                        'title' => __('Show Wishlist', 'porto'),
+                        'title' => __('Hiển thị sản phẩm yêu thích', 'porto'),
                         'default' => true,
                         'on' => __('Yes', 'porto'),
                         'off' => __('No', 'porto'),
@@ -4402,7 +4402,20 @@ if (!class_exists('Redux_Framework_porto_settings')) {
                         'desc' => __('Input the custom tab priority. (Description: 10, Additional Information: 20, Reviews: 30)', 'porto'),
                         'default' => '60'
                     ),
+					array(
+                        'id' => "product-tab-title-2",
+                        'type' => 'text',
+                        'title' => __('Global Product Custom Tab Title 2', 'porto'),
+                        'default' => ''
+                    ),
 
+                    array(
+                        'id' => "product-tab-block-2",
+                        'type' => 'text',
+                        'title' => __('Global Product Custom Tab Block 2', 'porto'),
+                        'desc' => __('Input block slug name 2', 'porto'),
+                        'default' => ''
+                    ),
                     array(
                         'id'=>'product-related',
                         'type' => 'switch',

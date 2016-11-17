@@ -1,3 +1,22 @@
+# BEGIN REMOVE SLUG CUSTOM POST TYPE RULES
+RewriteRule ^product/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^product_variation/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^shop_order_refund/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^vc_grid_item/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^block/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^faq/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^member/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^portfolio/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^wafs/(.+)/$ /$1\.html [R=301,l]
+RewriteRule ^wysijap/(.+)/$ /$1\.html [R=301,l]
+# END REMOVE SLUG CUSTOM POST TYPE RULES
+
+
+
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

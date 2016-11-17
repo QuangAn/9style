@@ -85,7 +85,15 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 		<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
-
+		<a class="hoi-dap" href="#" data-toggle="tooltip" data-placement="top"  data-original-title="Hỏi thêm về sản phẩm này"><i class="fa fa-question"></i></a>
+		<script type="text/javascript">
+  			jQuery('.hoi-dap').click(function(){
+  				jQuery('#tab-reviews').trigger('click');
+  				jQuery('html, body').animate({
+			        scrollTop: jQuery("#tab-reviews").offset().top
+			    }, 1000);
+  			});
+  		</script>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 
 	<?php endif; ?>

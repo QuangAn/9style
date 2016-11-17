@@ -146,7 +146,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 			),
 
 			array(
-				'title'    => __( 'Addresses', 'woocommerce' ),
+				'title'    => __( 'D', 'woocommerce' ),
 				'desc'     => __( 'Endpoint for the My Account &rarr; Addresses page', 'woocommerce' ),
 				'id'       => 'woocommerce_myaccount_edit_address_endpoint',
 				'type'     => 'text',

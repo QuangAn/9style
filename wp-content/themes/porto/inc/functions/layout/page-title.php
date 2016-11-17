@@ -25,9 +25,9 @@ function porto_page_title() {
             $html = porto_page_title_leaf( 'term' );
 
             if ( is_tag() ) {
-                $output .= sprintf( __( 'Tag - %s', 'porto' ), $html );
+                $output .= sprintf( __( '%s', 'porto' ), $html );
             } elseif ( is_tax('product_tag') ) {
-                $output .= sprintf( __( 'Product Tag - %s', 'porto' ), $html );
+                $output .= sprintf( __( '%s', 'porto' ), $html );
             } else {
                 $output .= $html;
             }

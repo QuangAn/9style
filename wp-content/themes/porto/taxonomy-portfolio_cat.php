@@ -65,7 +65,7 @@ if ($portfolio_infinite) {
             // Show Filters
             if (is_array($portfolio_taxs) && !empty($portfolio_taxs)) : ?>
                 <ul class="portfolio-filter nav nav-pills sort-source">
-                    <li class="active" data-filter="*"><a><?php echo __('Show All', 'porto'); ?></a></li>
+                    <li class="active" data-filter="*"><a><?php echo __('Hiển thị tất cả', 'porto'); ?></a></li>
                     <?php foreach ($portfolio_taxs as $portfolio_tax_slug => $portfolio_tax_name) : ?>
                         <li data-filter="<?php echo esc_attr($portfolio_tax_slug) ?>"><a><?php echo esc_html($portfolio_tax_name) ?></a></li>
                     <?php endforeach; ?>

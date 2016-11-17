@@ -170,7 +170,7 @@ function WooComposer_Single_style03($atts){
 			}
 			
 			if(in_array("quick",$elemets)){
-				$output .= '<div class="wcmp-quick-view quick-view-single" style="'.$view_bg_style.'"><a style="'.$view_style.'" title="Quick View" href="'.get_permalink($product_id).'"><i class="wooicon-plus32"></i></a></div>';
+				$output .= '<div class="wcmp-quick-view quick-view-single" style="'.$view_bg_style.'"><a style="'.$view_style.'" title="Xem nhanh" href="'.get_permalink($product_id).'"><i class="wooicon-plus32"></i></a></div>';
 			}
 			
 			$output .= '</div>';/*Class End wcmp-style3-cart-block*/

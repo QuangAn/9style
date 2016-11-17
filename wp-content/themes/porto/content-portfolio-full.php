@@ -139,7 +139,7 @@ $portfolio_layout = 'full';
 
         <?php if ($porto_settings['portfolio-author']) : ?>
             <div class="post-block post-author clearfix">
-                <h3><i class="fa fa-user"></i><?php _e('Author', 'porto') ?></h3>
+                <h3><i class="fa fa-user"></i><?php _e('Người đăng', 'porto') ?></h3>
                 <div class="img-thumbnail">
                     <?php echo get_avatar(get_the_author_meta('email'), '80'); ?>
                 </div>

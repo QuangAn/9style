@@ -156,7 +156,7 @@ function WooComposer_Single_style01($atts){
 			$output .= '<div class="wcmp-add-to-cart" style="'.$cart_bg_style.'">';
 			$output .= '<a style="'.$cart_style.'" title="Add to Cart" href="?add-to-cart='.$product_id.'" rel="nofollow" data-product_id="'.$product_id.'" data-product_sku="" class="add_to_cart_button product_type_simple"><i class="wooicon-cart4"></i></a></div>';
 			if(in_array("quick",$elemets)){
-				$output .= '<div class="wcmp-quick-view quick-view-single" style="'.$view_bg_style.'"><a style="'.$view_style.'" title="Quick View" href="'.get_permalink($product_id).'"><i class="wooicon-plus32"></i></a></div>';
+				$output .= '<div class="wcmp-quick-view quick-view-single" style="'.$view_bg_style.'"><a style="'.$view_style.'" title="Xem nhanh" href="'.get_permalink($product_id).'"><i class="wooicon-plus32"></i></a></div>';
 			}
 			if(in_array("reviews",$elemets)){
 				$output .= "\n".'<div class="wcmp-star-ratings" style="'.$rating_style.'">'.$rating.'</div>';

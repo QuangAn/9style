@@ -66,7 +66,7 @@ $classes .= ($post_count % 2 == 1?'left':'right');
             if ($tags_list && in_array('tags', $porto_settings['post-metas'])) : ?>
                 <span><i class="fa fa-tag"></i> <?php echo $tags_list ?></span>
             <?php endif; ?>
-            <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 Comments', 'porto'), __('1 Comment', 'porto'), '% '.__('Comments', 'porto')); ?></span><?php endif; ?>
+            <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 bình luận', 'porto'), __('1 bình luận', 'porto'), '% '.__('Bình luận', 'porto')); ?></span><?php endif; ?>
             <?php
             if (function_exists('Post_Views_Counter') && Post_Views_Counter()->options['display']['position'] == 'manual') {
                 $post_count = do_shortcode('[post-views]');
@@ -77,7 +77,7 @@ $classes .= ($post_count % 2 == 1?'left':'right');
             ?>
         </div>
         <div class="clearfix">
-            <a class="btn btn-xs btn-primary pt-right" href="<?php echo esc_url( apply_filters( 'the_permalink', get_permalink() ) ) ?>"><?php _e('Read more...', 'porto') ?></a>
+            <a class="btn btn-xs btn-primary pt-right" href="<?php echo esc_url( apply_filters( 'the_permalink', get_permalink() ) ) ?>"><?php _e('Xem chi tiết...', 'porto') ?></a>
         </div>
 
     </article>

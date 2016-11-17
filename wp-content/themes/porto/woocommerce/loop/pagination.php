@@ -20,7 +20,7 @@ $page_count = porto_loop_shop_per_page();
 ?>
 <nav class="woocommerce-pagination">
     <form class="woocommerce-viewing" method="get">
-        <label><?php echo __('View', 'porto') ?>: </label>
+        <label><?php echo __('Hiển thị', 'porto') ?>: </label>
         <select name="count" class="count">
             <?php foreach ( $per_page as $count ) : ?>
                 <option value="<?php echo esc_attr( $count ); ?>" <?php selected( $page_count, $count ); ?>><?php echo esc_html( $count ); ?></option>

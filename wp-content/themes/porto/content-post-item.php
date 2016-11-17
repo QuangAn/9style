@@ -65,7 +65,7 @@ if (isset($porto_settings['post-related-style']) && 'style-3' == $porto_settings
         if ($tags_list && in_array('tags', $porto_settings['post-metas'])) : ?>
             <span><i class="fa fa-tag"></i> <?php echo $tags_list ?></span>
         <?php endif; ?>
-        <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 Comments', 'porto'), __('1 Comment', 'porto'), '% '.__('Comments', 'porto')); ?></span><?php endif; ?>
+        <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><span><i class="fa fa-comments"></i> <?php comments_popup_link(__('0 bình luận', 'porto'), __('1 bình luận', 'porto'), '% '.__('Bình luận', 'porto')); ?></span><?php endif; ?>
         <?php
         if (function_exists('Post_Views_Counter') && Post_Views_Counter()->options['display']['position'] == 'manual') {
             $post_count = do_shortcode('[post-views]');
@@ -107,7 +107,7 @@ if (isset($porto_settings['post-related-style']) && 'style-3' == $porto_settings
                     if ($tags_list && in_array('tags', $porto_settings['post-metas'])) : ?>
                         <?php if ($first) $first = false; else echo ' | ' ?><?php echo $tags_list ?>
                     <?php endif; ?>
-                    <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><?php if ($first) $first = false; else echo ' | ' ?><?php comments_popup_link(__('0 Comments', 'porto'), __('1 Comment', 'porto'), '% '.__('Comments', 'porto')); ?><?php endif; ?>
+                    <?php if (in_array('comments', $porto_settings['post-metas'])) : ?><?php if ($first) $first = false; else echo ' | ' ?><?php comments_popup_link(__('0 bình luận', 'porto'), __('1 bình luận', 'porto'), '% '.__('Bình luận', 'porto')); ?><?php endif; ?>
                     <?php
                     if (function_exists('Post_Views_Counter') && Post_Views_Counter()->options['display']['position'] == 'manual') {
                         $post_count = do_shortcode('[post-views]');

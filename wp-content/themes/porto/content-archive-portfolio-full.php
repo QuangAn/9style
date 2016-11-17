@@ -109,7 +109,7 @@ $show_external_link = $porto_settings['portfolio-external-link'];
                 ?>
             </ul>
         </div>
-        <a class="btn btn-xs btn-primary pt-right" href="<?php echo esc_url( apply_filters( 'the_permalink', get_permalink() ) ) ?>"><?php _e('Read more...', 'porto') ?></a>
+        <a class="btn btn-xs btn-primary pt-right" href="<?php echo esc_url( apply_filters( 'the_permalink', get_permalink() ) ) ?>"><?php _e('Xem chi tiết...', 'porto') ?></a>
     </div>
 
 </article>

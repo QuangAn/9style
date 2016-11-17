@@ -56,7 +56,7 @@ if ( ! comments_open() ) {
 					$commenter = wp_get_current_commenter();
 
 					$comment_form = array(
-						'title_reply'          => have_comments() ? __( 'Add a review', 'woocommerce' ) : sprintf( __( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
+						'title_reply'          => have_comments() ? __( 'Thêm đánh giá', 'woocommerce' ) : sprintf( __( 'Hãy là người đánh giá đầu tiên &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
 						'title_reply_to'       => __( 'Leave a Reply to %s', 'woocommerce' ),
 						'comment_notes_before' => '',
 						'comment_notes_after'  => '',

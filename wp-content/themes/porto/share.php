@@ -6,8 +6,10 @@ global $porto_settings;
 if (!$porto_settings['share-enable'])
     return;
 
-echo '<div class="share-links">';
+echo '<div class="share-links"><i class="fa fa-share"></i><b>Chia sẻ lên :</b> ';
+?>
 
+<?php
 $nofollow = '';
 if ($porto_settings['share-nofollow'])
     $nofollow = 'rel="nofollow"';

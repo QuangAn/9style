@@ -15,3 +15,4 @@ function porto_child_css() {
         wp_enqueue_style( 'styles-child-rtl' );
     }
 }
+

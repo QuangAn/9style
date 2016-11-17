@@ -96,7 +96,7 @@ if ($posts->have_posts()) {
         <?php if (is_array($member_taxs) && !empty($member_taxs)):
             ?>
             <ul class="member-filter nav nav-pills sort-source">
-                <li class="active" data-filter="*"><a><?php echo __('Show All', 'porto'); ?></a></li>
+                <li class="active" data-filter="*"><a><?php echo __('Hiển thị tất cả', 'porto'); ?></a></li>
                 <?php foreach ($member_taxs as $member_tax_slug => $member_tax_name) : ?>
                     <li data-filter="<?php echo esc_attr($member_tax_slug) ?>"><a><?php echo esc_html($member_tax_name) ?></a></li>
                 <?php endforeach; ?>

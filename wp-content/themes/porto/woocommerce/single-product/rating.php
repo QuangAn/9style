@@ -30,7 +30,7 @@ if ( $rating_count > 0 ) : ?>
         <meta content="<?php echo $rating_count; ?>" itemprop="ratingCount" />
         <meta content="5" itemprop="bestRating" />
         <?php if ( comments_open() ) : ?>
-		    <div class="review-link"><a href="<?php if (porto_is_ajax()) the_permalink() ?>#reviews" class="woocommerce-review-link" rel="nofollow"><?php printf( _n( '%s customer review', '%s customer reviews', $review_count, 'woocommerce' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?></a>|<a href="<?php if (porto_is_ajax()) the_permalink() ?>#review_form" class="woocommerce-write-review-link" rel="nofollow"><?php echo __( 'Add a review', 'woocommerce' ); ?></a></div>
+		    <div class="review-link"><a href="<?php if (porto_is_ajax()) the_permalink() ?>#reviews" class="woocommerce-review-link" rel="nofollow"><?php printf( _n( '%s customer review', '%s customer reviews', $review_count, 'woocommerce' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?></a>|<a href="<?php if (porto_is_ajax()) the_permalink() ?>#review_form" class="woocommerce-write-review-link" rel="nofollow"><?php echo __( 'Thêm đánh giá', 'woocommerce' ); ?></a></div>
         <?php endif; ?>
 	</div>
 

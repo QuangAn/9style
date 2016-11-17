@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <form class="woocommerce-ordering" method="get">
-    <label><?php echo __('Sort By', 'porto') ?>: </label>
+    <label><?php echo __('Sắp xếp theo', 'porto') ?>: </label>
     <select name="orderby" class="orderby">
 		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>

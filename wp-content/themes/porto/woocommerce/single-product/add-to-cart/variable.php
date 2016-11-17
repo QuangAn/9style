@@ -113,7 +113,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                     <button type="submit" class="single_add_to_cart_button button alt"><?php echo $product->single_add_to_cart_text(); ?></button>
                 </div>
                 <?php endif; ?>
-
+                <a class="hoi-dap" href="#" data-toggle="tooltip" data-placement="top"  data-original-title="Hỏi thêm về sản phẩm này"><i class="fa fa-question"></i></a>
                 <input type="hidden" name="add-to-cart" value="<?php echo $product->id; ?>" />
                 <input type="hidden" name="product_id" value="<?php echo esc_attr( $post->ID ); ?>" />
                 <input type="hidden" name="variation_id" class="variation_id" value="" />

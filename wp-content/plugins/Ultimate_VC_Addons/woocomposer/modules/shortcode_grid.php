@@ -110,7 +110,7 @@ if(!class_exists('WooComposer_GridView')){
 													"off" => "No",
 												),
 										"quick" => array(
-													"label" => "Quick View",
+													"label" => "Xem nhanh",
 													"on" => "Yes",
 													"off" => "No",
 												),

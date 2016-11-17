@@ -605,6 +605,8 @@
     "product-tabs-pos":"",
     "product-tab-title":"",
     "product-tab-block":"",
+	"product-tab-title-2":"",
+    "product-tab-block-2":"",
     "product-related-count":"10",
     "product-upsells":true,
     "product-upsells-count":"10",
